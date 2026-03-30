@@ -1,6 +1,8 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro'
+import WordCountInput from '../components/WordCountInput'
 ---
 
 <BaseLayout title="WordSprint — Track Your Daily Writing">
+  <WordCountInput client:visible />
 </BaseLayout>
