@@ -11,6 +11,7 @@ import PenNib from './PenNib.astro';
       <h1 class="site-title">
         <span class="word-part">Word</span><span class="sprint-part">Sprint</span>
       </h1>
+      <p class="tagline">Track your daily writing journey</p>
     </div>
   </div>
 </header>
@@ -69,5 +70,14 @@ import PenNib from './PenNib.astro';
   display: flex;
   align-items: center;
   flex-shrink: 0;
+}
+.tagline {
+  font-style: italic;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(200, 207, 224, 0.8);
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: 0.02em;
 }
 </style>
