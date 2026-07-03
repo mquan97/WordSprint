@@ -8,10 +8,12 @@ import PenNib from './PenNib.astro';
       <div class="nib">
         <PenNib />
       </div>
-      <h1 class="site-title">
-        <span class="word-part">Word</span><span class="sprint-part">Sprint</span>
-      </h1>
-      <p class="tagline">Track your daily writing journey</p>
+      <div class="title-column">
+        <h1 class="site-title">
+          <span class="word-part">Word</span><span class="sprint-part">Sprint</span>
+        </h1>
+        <p class="tagline">Track your daily writing journey</p>
+      </div>
     </div>
   </div>
 </header>
@@ -51,6 +53,11 @@ import PenNib from './PenNib.astro';
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.title-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .word-part {
   background: linear-gradient(135deg, #e8e8f0 0%, #c8cfe0 100%);
