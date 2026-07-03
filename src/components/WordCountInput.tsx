@@ -23,22 +23,20 @@ export default function WordCountInput() {
   return (
     <>
       <style>{styles}</style>
-      <form onSubmit={handleSubmit} className={styles.form}>
-        <div className={styles.formContent}>
-          <label htmlFor="wordCountInput" className={styles.label}>
-            How many words did you write today?
-          </label>
-          <input
-            id="wordCountInput"
-            type="text"
-            inputMode="numeric"
-            value={wordCount}
-            onChange={handleInputChange}
-            placeholder="0"
-            className={styles.input}
-            autoComplete="off"
-          />
-        </div>
+      <form onSubmit={handleSubmit} className="word-count-form">
+        <label htmlFor="wordCountInput" className="word-count-label">
+          How many words did you write today?
+        </label>
+        <input
+          id="wordCountInput"
+          type="text"
+          inputMode="numeric"
+          value={wordCount}
+          onChange={handleInputChange}
+          placeholder="0"
+          className="word-count-input"
+          autoComplete="off"
+        />
       </form>
     </>
   )

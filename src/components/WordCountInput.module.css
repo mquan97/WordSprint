@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
-.form {
+.word-count-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@
   overflow: hidden;
 }
 
-.form::before {
+.word-count-form::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -22,17 +22,12 @@
   pointer-events: none;
 }
 
-.formContent {
+.word-count-form > * {
   position: relative;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  width: 100%;
 }
 
-.label {
+.word-count-label {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(1.25rem, 3vw, 1.75rem);
   font-weight: 400;
@@ -45,7 +40,7 @@
   margin: 0;
 }
 
-.input {
+.word-count-input {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.5rem;
   font-weight: 400;
@@ -62,17 +57,18 @@
   outline: none;
 }
 
-.input::placeholder {
+.word-count-input::placeholder {
   color: rgba(200, 207, 224, 0.4);
 }
 
-.input:focus {
+.word-count-input:focus {
   border-color: #d4aa65;
   box-shadow: 0 0 16px rgba(212, 170, 101, 0.3), inset 0 0 8px rgba(212, 170, 101, 0.1);
   background: rgba(13, 27, 42, 0.9);
 }
 
-.input:hover:not(:focus) {
+.word-count-input:hover:not(:focus) {
   border-color: rgba(212, 170, 101, 0.7);
 }
+
 
